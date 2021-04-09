@@ -19,19 +19,76 @@ div.logo {
     font-size: 1.5rem;
     color: #bcc3c7;
 }
+@media screen and (max-width: 768px) {
+    div.logo {
+        font-size: 1.5rem;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+}
+div.openMenu {
+    color: #bcc3c7;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    div.openMenu {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+}
+div.closeMenu {
+    color: #bcc3c7;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer; 
+}
+@media screen and (max-width: 768px) {
+    div.closeMenu {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+}
 
-ul.nav-links {
+ul.navLinks {
     display: flex;
     margin: 0;
     padding: 0;
 }
+@media screen and (max-width: 768px) {
+    ul.navLinks {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #304353;
+        transition: top 1s ease;
+        display: none;
+    }
+} 
 
 ul li {
     margin: 0 2vw;
     list-style: none;
     font-size: 1.1rem;
 }
-
+@media screen and (max-width: 768px) {
+    ul li {
+        font-size: 1.1rem;
+        margin: 10px;
+    }
+}
 ul li a {
     text-decoration: none;
     color: #88949B;
@@ -42,6 +99,11 @@ ul li a:hover {
     color: #304353;
     background: #fff;
     padding: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+    ul li a:hover {
+        font-size: 1.5rem;
+    }
 }
 
 div.hero-section {
@@ -60,7 +122,14 @@ div.hero-content-heading h3 {
     font-weight: 300;
     color: #bcc3c7;
 }
-
+@media screen and (max-width: 768px) {
+    div.hero-content-heading h3 {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+}
+    
 div.hero-content-heading p {
     text-align: center;
     padding-top: 0.7rem;
@@ -69,7 +138,14 @@ div.hero-content-heading p {
     letter-spacing: 2px;
     font-weight: 300;
 }
-
+@media screen and (max-width: 768px) {
+    div.hero-content-heading p {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        padding-bottom: 0.5rem;
+    }
+}
+    
 div.hero-content-btn {
     display: flex;
     justify-content: center;
@@ -86,7 +162,11 @@ div.hero-content-btn a {
     border-radius: 3px;
     letter-spacing: 2px;
 }
-
+@media screen and (max-width: 768px) {
+    div.hero-content-btn a {
+        text-align: center;
+    }
+}
 div.hero-background {
     background: #f0f0f0;
     padding: 10rem;
@@ -103,7 +183,12 @@ div.background {
     height: 220px;
     position: relative;
 }
-
+@media screen and (max-width: 768px) {
+    div.background {
+        width: 580px;
+        height: 300px;
+    }
+}
 div.background h4 {
     padding: 2rem;
     color: #555657;
@@ -111,14 +196,25 @@ div.background h4 {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
+@media screen and (max-width: 768px) {
+    div.background h4 {
+        text-align: center;
+    }
+}
 div.background p {
     color: #A6A5AA;
     padding-left: 2rem;
     font-size: 0.8rem;
     letter-spacing: 2px;
 }
-
+@media screen and (max-width: 768px) {
+    div.background p{
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        padding: 0;
+        text-align: center;
+    }
+}
 div.hero-background-pos {
     position: absolute;
     right: 0px;
@@ -128,6 +224,12 @@ div.hero-background-pos {
     height: 140px;
     border-radius: 50%;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+}
+@media screen and (max-width: 768px) {
+    div.hero-background-pos {
+        left: 80%;
+        display: none;
+    }
 }
 
 div.snapshot-team {
@@ -162,7 +264,14 @@ div.snapshot-box-content {
     display: flex;
     justify-content: space-between;
 }
-
+@media screen and (max-width: 768px) {
+    div.snapshot-box-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+} 
 div.box1 {
     background: #fff;
     padding: 10px 20px;
@@ -198,7 +307,6 @@ div.circle {
     border-radius: 50%;
     background: #bcc3c7;
     margin-top: 2rem;
-    
 }
 
 div.box1 h5 {
@@ -276,6 +384,12 @@ div.footer-input {
     align-items: center;
     padding-top: 3rem;
 }
+@media screen and (max-width: 768px) {
+    div.footer-input {
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+}
 
 input[type="text"] {
     margin-right: 10px;
@@ -288,7 +402,12 @@ input[type="text"] {
     font-size: 1rem;
     border-radius: 2px;
 }
-
+@media screen and (max-width: 768px) {
+    input[type="text"] {
+        width: 51%;
+        margin: 1rem;
+    }
+}
 input[type="email"] {
     margin-right: 10px;
     padding: 10px 20px;
@@ -300,7 +419,12 @@ input[type="email"] {
     font-size: 1rem;
     border-radius: 2px;
 }
-
+@media screen and (max-width: 768px) {
+    input[type="email"] {
+        width: 51%;
+        margin: 1rem;
+    }
+}
 ::placeholder {
     color: #A6A5AA;
 }
